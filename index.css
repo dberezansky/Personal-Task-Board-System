@@ -4,7 +4,7 @@
 /*font-family: 'Encode Sans', sans-serif;*/
 
 body {
-    background-color: #201f1f;
+    background-color: #272525;
 }
 
 .horizontalBar {
@@ -31,15 +31,38 @@ body {
     font-family: 'Castoro', sans-serif; */
 }
 
-
 #githubIcon {
     width: 30px;
     height: 30px;
     margin-left: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    position: relative;
     cursor: pointer;
+}
+
+#printerIcon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+@media print {
+    @page {
+        size: A4;
+    }
+    body {
+        margin: 0;
+        background-color: #1a1919;
+    }
+    .horizontalBar  {
+        display: none;
+    }
+    .task-board  {
+        display: block;
+    }
 }
 
 .task-board {
@@ -47,7 +70,7 @@ body {
     padding: 10px;
     height: 960px;
     width: 640px;
-    background-color: #4B4B4C;
+    background-color: #1a1919;
 }
 
 .note-row {
