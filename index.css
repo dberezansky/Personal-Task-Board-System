@@ -20,20 +20,28 @@ body {
     font-family: 'Encode Sans', sans-serif;
 }
 
-.horizontalBar:hover {
-    transition: 0.5s;
+#title {
+    width: 220px;
+    font-size: 24pt;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #006994;
+    /* font-weight: 700;
+    font-family: 'Castoro', sans-serif; */
 }
 
-#startMarker  {
-    width: 25px;
-    height: 25px;
-    margin: 20px;
+
+#githubIcon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    cursor: pointer;
 }
 
-#endMarker  {
-    width: 20px;
-    height: 30.72px;
-}
 .task-board {
     margin: auto;
     padding: 10px;
